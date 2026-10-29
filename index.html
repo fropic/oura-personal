@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Personal Health Insights | fropic</title><meta name="description" content="Personal Health Insights: a private, single-user Oura data analysis project by fropic.">
+<style>
+:root{color-scheme:light;--paper:#f6f4ef;--ink:#18352d;--muted:#53665f;--line:#d7dfd8;--accent:#28694e}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.75}
+a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid #a27829;outline-offset:5px}
+header,main,footer{max-width:940px;margin:auto;padding:28px 30px}header{display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid var(--line)}
+.brand{font-weight:750;text-decoration:none;color:var(--ink)}nav{display:flex;gap:24px;flex-wrap:wrap;font-size:14px}nav a[aria-current=page]{font-weight:750}
+main{padding-top:60px;padding-bottom:66px}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(32px,6vw,52px);letter-spacing:-.035em;line-height:1.15;margin:15px 0 24px;max-width:780px}h2{font-size:22px;line-height:1.4;margin:34px 0 10px}
+p,li{max-width:780px}.lead{font-size:20px;color:var(--muted);max-width:720px}.zh{color:var(--muted);font-size:15px}.note{border-left:3px solid var(--accent);padding:12px 20px;background:#e9efe7;margin:30px 0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:36px;border-top:1px solid var(--line);padding-top:25px}.steps h2{margin:8px 0;font-size:19px}.number{font-size:12px;color:var(--accent);font-weight:750}
+.meta,footer{font-size:13px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-bottom:36px}ul{padding-left:22px}
+@media(max-width:620px){header{align-items:flex-start;flex-direction:column}header,main,footer{padding-left:22px;padding-right:22px}main{padding-top:38px}.steps{grid-template-columns:1fr;gap:12px}nav{gap:20px}}
+</style></head><body><header><a class="brand" href="index.html">Personal Health Insights</a><nav aria-label="Main navigation"><a href="index.html" aria-current="page">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header>
+<main>
+<p class="eyebrow">Independent personal project · fropic</p>
+<h1>A clearer view of personal<br>health patterns.</h1>
+<p class="lead">Personal Health Insights is a private, single-user project for reviewing the owner's Oura sleep, activity, and recovery data with optional AI-assisted analysis.</p>
+<p class="zh" lang="zh-CN">个人健康趋势分析工具：通过 Oura 官方 API 读取本人授权的数据，结合本机整理和可选的 AI 辅助分析，了解睡眠、活动与恢复的长期变化。</p>
+<div class="note"><strong>This website contains project information only.</strong> It has no Oura sign-in, health-data upload, or public dashboard. The data integration is being set up separately.</div>
+<div class="steps">
+<section><span class="number">01 / CONNECT</span><h2>Owner-authorized access</h2><p>The planned local integration uses Oura OAuth authorization and requests only the data needed for the owner's analysis.</p></section>
+<section><span class="number">02 / REVIEW</span><h2>Understand trends</h2><p>Review sleep timing, activity, heart rate, HRV, and other available recovery metrics over time.</p></section>
+<section><span class="number">03 / REFLECT</span><h2>Explore associations</h2><p>Compare personal habits and recorded tags with trends. Associations do not establish causes or medical diagnoses.</p></section>
+</div>
+<h2>Built for one person's use</h2><p>This project is operated by <a href="https://github.com/fropic">fropic</a> for the account owner's personal use. It is not open for public registration and is not an official Oura product or an Oura-endorsed service.</p>
+<p>Read the <a href="privacy.html">privacy notice</a> for the intended data flow and the <a href="terms.html">terms of use</a> for the project's scope.</p>
+</main><footer>Personal Health Insights · Maintained by <a href="https://github.com/fropic">fropic</a> · Independent personal project</footer></body></html>
